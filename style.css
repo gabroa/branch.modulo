@@ -1,0 +1,146 @@
+/* Reseta a margem e o padding */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos gerais do cabeçalho */
+body > header {
+    background-color: #D91E36; /* Vermelho vibrante */
+    padding: 16px 0;
+    color: #ECF0F1; /* Cor clara para o texto */
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header li {
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+header li a {
+    color: #ECF0F1; /* Cor do texto do link */
+    text-decoration: none;
+    margin-left: 16px;
+}
+
+.container {
+    width: 1360px;
+    margin: 0 auto;
+}
+
+/* Estilos para os artigos */
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.articles article img {
+    width: 100%;
+}
+
+.articles article {
+    width: 30%;
+}
+
+section {
+    padding: 16px 0;
+}
+
+section h2, 
+.articles article {
+    margin-bottom: 16px;
+}
+
+.articles article h3 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.articles article a { /* Definindo o botão */
+    background-color: #F39C12; /* Amarelo vibrante */
+    color: #fff;
+    padding: 8px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.articles article a:hover {
+    background-color: #E67E22; /* Amarelo mais escuro para o hover */
+    text-decoration: underline;
+}
+
+.articles article p,
+.articles article a {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.articles article h3 {
+    font-size: 24px;
+}
+
+section h2 {
+    font-size: 32px;
+}
+
+/* Estilos para as seções específicas */
+#sports {
+    background-color: rgba(46, 204, 113, 0.1); /* Verde vibrante translúcido */
+    min-height: 400px; /* Garantir altura mínima para visibilidade */
+    padding: 40px 0; /* Espaçamento superior e inferior */
+}
+
+#sports .articles article a {
+    background-color: #1ABC9C; /* Verde vibrante */
+}
+
+#economy {
+    background-color: rgba(26, 188, 156, 0.1); /* Azul turquesa translúcido */
+    min-height: 400px; /* Garantir altura mínima */
+    padding: 40px 0; /* Espaçamento superior e inferior */
+}
+
+#economy .articles article a {
+    background-color: #16A085; /* Azul turquesa */
+}
+
+/* Seção #beauty com cor de fundo vibrante */
+#beauty {
+    background-color: rgba(243, 156, 18, 0.1); /* Amarelo vibrante translúcido */
+    min-height: 400px; /* Garantir altura mínima */
+    padding: 40px 0; /* Espaçamento superior e inferior */
+}
+
+#beauty .articles article a {
+    background-color: #F39C12; /* Amarelo vibrante */
+}
+
+/* Seção #health com cor de fundo vibrante */
+#health {
+    background-color: rgba(231, 76, 60, 0.1); /* Vermelho vibrante translúcido */
+    min-height: 400px;
+    padding: 40px 0;
+}
+
+#health .articles article a {
+    background-color: #E74C3C; /* Vermelho vibrante */
+}
+
+/* Estilos adicionais */
+h2 {
+    font-size: 32px;
+    color: #34495E; /* Cor escura para o título */
+}
+
+p {
+    color: #7F8C8D; /* Cor suave para o texto */
+}
