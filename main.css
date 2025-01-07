@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --background-color:#32292F;
+    --card-color: #575366;
+    --card-color2: #6E7DAB;
+    --card-color3: #5762D5;
+    --text-color-primary:#D1E3DD;
+    
+    
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-style: normal;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: "Roboto", sans-serif;
+}
+
+
+
+.container{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column;
+    height: 100vh;
+}
+
+
+
+h1{
+    font-size: 24px;
+    margin-bottom: 20px;
+    width: 30%;
+    text-align: center;
+    color: var(--text-color-primary);
+    background-color: var(--card-color);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Form style */
+
+form{
+    background-color: var(--card-color);
+    border-radius: 10px;
+    padding: 20px 15px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+form label{
+    color: var(--text-color-primary);
+}
+
+form input{
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 2px solid var(--text-color-primary);
+    border-radius: 8px;
+    outline-style: none;
+    color: var(--card-color3);
+    transition: 300ms;
+}
+
+form input:focus{
+    border-color: var(--card-color3);
+}
+
+form button{
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--card-color2);
+    color: var(--text-color-primary);
+    text-transform: uppercase;
+    transition: 200ms;
+    font-weight: bold;
+}
+
+form button:hover{
+    background-color: var(--card-color3);
+    scale: 1.02;
+}
+
+
+/* Mensage error or sucess */
+
+.message{
+    padding: 8px 8px;
+    border: 1px solid white;
+    border-radius: 8px;
+    transition: 500ms;
+    display: none;
+    transition: opacity 600ms, visibility 600ms;
+}
+
+.error{
+    background-color:brown;
+    color: var(--text-color-primary);
+    display: block;
+    border: 1px solid red;
+}
+
+.sucess{
+    background-color:rgb(42, 165, 52);
+    color: var(--text-color-primary);
+    display: block;
+    border: 1px solid green;
+}
+

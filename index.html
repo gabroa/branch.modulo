@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade EBAC - Validação JS</title>
+    <link rel="stylesheet" href="./main.css" />
+</head>
+
+<body>
+    <!-- 1) Crie um formulário HTML que possua dois campos numéricos:
+    campo A
+    campo B-->
+    <div class="container">
+        <h1>Preenchimento de Dados</h1>
+        <form id="form-validate">
+            <label for="field-a" >Campo A</label>
+            <input id="field-a" min="1" type="number" autocomplete="off" placeholder="Digite um valor" required>
+            <p id="message-field-a" class="message">Error</p>
+
+            <label for="field-b">Campo B</label>
+            <input id="field-b" min="1" type="number" autocomplete="off" placeholder="Digite um valor" required>
+            <p id="message-field-b" class="message">Error</p>
+            
+            <button type="submit">Enviar</button>
+            <p id="sucess-message" class="message">Sucess</p>
+
+        </form>
+    </div>
+    <!-- 2) Insira um botão para submeter o formulário.
+    
+    3) Crie uma validação no JavaScript, na qual o formulário será válido caso o número B seja maior que o número A.
+    
+    4) Exiba uma mensagem positiva para o usuário quando o formulário for válido e uma mensagem negativa quando for inválido. -->
+<script src="main.js"></script>
+</body>
+
+</html>
